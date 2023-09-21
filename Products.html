@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="MK" href="images/iconpage.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <style>
+        
+        body{
+            background-image: url("images/fondo.jpg");
+        }
+        .navbar{
+            background-color: rgb(0, 0, 0);
+            padding: 8px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        } 
+            .espacio{
+            height: 60px;
+        }
+        .conten_navbar{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;  
+        }
+        .nav_item{
+            color: #ffe4e1;
+            text-decoration: none;
+            font-family:Arial, Helvetica, sans-serif;
+            padding: 10px;
+            transition: background-color 0.5s;
+            font-size: 20px; 
+            border-radius: 5px;
+        }
+    
+        .nav_item:hover{
+            background-color: #cf3476;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .titulos{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            color: rgb(0, 0, 0);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-decoration:solid,#fff,4px;
+            font-size: 45px;
+        }
+        .info{
+            color: rgb(3, 2, 2);
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 16px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        .images{
+            display: flex;
+            justify-content: space-between;
+            width: 550px;
+            align-items: center;
+        }
+        .image{
+            transition: scale 0.4s;
+            padding-left: 150px;
+        }
+        .image:hover{
+            scale: 1.1;
+        }
+        .titulo{
+           color: rgb(255,182,193);
+        }
+        .conten_titulo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 100px;
+        }
+        @media (max-width: 900px){
+            .navbar{
+                flex-direction: column;
+                 gap: 10px;
+            }
+            body{
+                margin-top: 100px;
+            }
+            .espacio{
+                height: 650px;
+            }
+            .titulos{
+                font-size: 32px;
+                text-align: center;
+            }
+            .image{
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+        }
+        @media(max-width:720px){
+            .images{
+                width: 100%;
+                flex-direction: column;
+            }
+            .image{
+                padding-left: 10px;
+                padding-bottom: 4%;
+            }
+            .titulos{
+                font-size: 25px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="conten_navbar"> 
+        <nav class="navbar">
+        <img src="images/LOGO MK.jpg" alt="Logo MK" width="60px" class="nav_logo">
+        <a href="Mary_Kay.html" class="nav_item">Home</a>
+        <a href="Products.html" class="nav_item">Products</a>
+        <a href="AboutUs.html" class="nav_item">About Us</a>
+        <a href="Sell_Mary_Kay.html" class="nav_item">Sell Mary Kay</a>
+        </nav>
+    </div>
+        <div class="espacio"></div>
+        <div class="conten_titulo">
+            <h1 class="titulos titulo"> Products </h1>
+        </div>       
+        <div class="conten_titulo">
+            <h2 class="titulos"> Skin Care</h2>
+        </div>
+        <div class="images">
+            <img src="images/botanicals.jpg" class="image" width="550px" > <img src="images/timewise.jpg" class="image" width="550px"> <img src="images/TIMEWISE REPAIR.jpg" class="image" width="500px">
+        </div>
+        <div class="conten_titulo">
+            <h1 class="titulos titulo"> Make Up</h1>
+        </div>
+        <div class="conten_titulo">
+            <h2 class="titulos"> Máscaras</h2>
+        </div>
+        <div class="images">
+            <img src="images/mascara5.png"class="image" width="250px"><img src="images/mascara2.png"class="image" width="250px"><img src="images/mascara1.png"class="image" width="250px"><img src="images/mascara3.png"class="image" width=250px ><img src="images/mascara4.png"class="image" width="200px">
+        </div>
+        <h3 class="titulos"> Sombras de ojos</h3>
+</body>
+</html>
